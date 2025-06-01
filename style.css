@@ -129,9 +129,9 @@ main {
     font-size: 0.875rem;
     letter-spacing: 0.25rem;
     line-height: 1.5rem;
-    display: block;         
-    margin-top: 1rem;        
-    margin-left: auto; 
+    display: inline-block;
+    align-self: flex-start;
+    margin: 0;
 }
 
 .segunda-secao {
@@ -207,6 +207,8 @@ text-decoration: none;
 
 @media (min-width:1110px) {
 
+    
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -279,3 +281,9 @@ text-decoration: none;
     color: var(--vermillion);
     cursor: pointer;
 }
+.conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+  }
