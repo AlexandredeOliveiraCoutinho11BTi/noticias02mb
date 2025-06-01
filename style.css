@@ -17,7 +17,7 @@
 --silver: #C5C6CE;
 }
 body {
-    padding: 1.75 rem 1rem;
+    padding: 1.75rem 1rem;
     background-color: var(--almost-white);
 }
 
@@ -48,6 +48,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
     
 }
 
@@ -84,6 +85,13 @@ header.mobile  a {
     font-size: 1.125rem;
     line-height: 1.5rem;
 }
+
+
+header .desktop {
+    display: none;
+}
+
+
 main {
     max-width: 1110px;
     margin-inline: auto;
@@ -121,6 +129,9 @@ main {
     font-size: 0.875rem;
     letter-spacing: 0.25rem;
     line-height: 1.5rem;
+    display: block;         
+    margin-top: 1rem;        
+    margin-left: auto; 
 }
 
 .segunda-secao {
@@ -130,9 +141,10 @@ main {
 }
 
 .margin-border-padding {
-    border: 1px solid var(--gunmetal);
+    border: none; 
     margin-bottom: 1.75rem;
     padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--gunmetal); 
 }
 
 
@@ -183,6 +195,10 @@ main {
     margin-block: 0.6rem;
 }
 
+.terceira-secao a {
+text-decoration: none;
+}
+
 .terceira-secao p {
     font-size: 0.9375rem;
     line-height: 1.625rem;
@@ -218,6 +234,12 @@ main {
     .primeira-secao h1 {
         font-size: 3.5rem;
     }
+
+    .primeira-secao button:hover {
+        color: var(--dark-blue);
+        cursor: pointer;
+    }
+    
     
 
     .segunda-secao h2 {
@@ -242,4 +264,18 @@ main {
         color: var(--gunmetal);
 
     }
+
+    header .desktop a:hover {
+        color: var(--vermillion);
+    }
+
+    .terceira-secao {
+        display: flex;
+        grid-column: 1 / 4;
+    }
+}
+
+.terceira-secao h2:hover {
+    color: var(--vermillion);
+    cursor: pointer;
 }
